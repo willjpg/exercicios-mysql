@@ -64,9 +64,9 @@ select * from tb_pizzas WHERE preco BETWEEN 50 AND 100;
 select * from tb_pizzas WHERE nome LIKE "%M%";
 
 select * from tb_pizzas inner join tb_categorias
-on tb_produtos.categoria_id = tb_categorias.id;
+on tb_pizzas.categoria_id = tb_categorias.id;
 
 select * from tb_pizzas inner join tb_categorias
-on tb_produtos.categoria_id = tb_categorias.id
-where tb_categorias.nome="Calabresa";
+on tb_pizzas.categoria_id = tb_categorias.id
+where tb_categorias.tipo= "Docê";
 
